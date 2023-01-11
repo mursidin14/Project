@@ -1,0 +1,2050 @@
+<html>
+  <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T6N1ENZC3Q"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-T6N1ENZC3Q');
+</script>
+
+<!-- CDN Tooltip-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tootik/1.0.2/css/tootik.min.css" integrity="sha512-vKFezWZR1lujcErGBY/kOc5Rk+kvUhofRwkSdZM5lGc2lnsdGO8B2m6RJ6JaVOi6HFoEvi59ant352DLljteHQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Get data API-->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+  <meta charset='utf-8'/> <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://cdn.jsdelivr.net/npm/@walletconnect/web3-provider@1.7.1/dist/umd/index.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  
+   <style>
+
+#ULSearchCoin {
+   list-style-type: none;
+   padding: 0;
+    width: 90%;
+    margin-left: 25px;
+    margin-top: -4px;
+}
+
+#ULSearchCoin li a {
+  border: 1px solid #ddd;
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #fffcfc;
+  padding: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  display: block
+}
+
+#ULSearchCoin li a:hover:not(.header) {
+  background-color: #eee;
+} 
+   
+   @-webkit-keyframes blinker {
+     from {opacity:1.0;}
+	 to {opacity:0.0;}
+   }
+   
+     .blink{
+	   text-decoration:blink;
+	   -webkit-animation-name:blinker;
+	   -webkit-animation-duration:1.5s;
+	   -webkit-animation-iteration-count:infinite;
+	   -webkit-animation-timing-function:ease-in-out;
+	   -webkit-animation-direction:alternate;
+	 }
+	 
+	 .connect{
+	 background-color:#e8e8eb;;
+	 }
+	 
+	  .connect:hover{
+	 background-color:#c9c4c4;
+	 }
+	 
+	   /* Dropdown Lang*/
+.dropdownLang-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+    border-radius: 8px;
+    margin-top: 6px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+	font-weight: 600;
+}
+
+.dropdownLang-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size:14px;
+}
+
+#DropdownLang a:hover {background-color: #ddd;}
+
+.show {display: block;}
+
+/* End Dropdown Lang*/
+	 
+	.ulmenu {
+     list-style-type: none;
+     justify-content: center;  display: flex;
+	
+     }
+
+     .ulmenu li {
+      float:left;
+      margin-right : 5px;
+	  margin-left : 5px;
+      margin-bottom: 15px;
+      }
+
+     .ulmenu li a {
+      padding:7px 10px;  
+      background-color:#F3F9F9;
+      border-radius:10px;
+	  color:black;
+	  font-weight:700;
+	  border: 1px solid #c6c6cd;
+	  text-decoration: none;
+     }
+	 
+	 .ulmenu li a:hover {
+	 background-color: #ddd;
+	 }
+	 
+	 #Inputsearchcoin:focus {
+	 box-shadow: rgb(212 216 228) 0px 11px 21px;
+	 }
+	 
+	  @media only screen and (min-width: 1024px) {
+	  .labelconnect {
+		   display : initial;
+		 }
+		 
+		 .dropdownLang-content {
+		  right : 70px;
+		}
+		 
+		   .headertopmiddle {
+		   width:50%;
+		 }
+	  
+	  #Chart{
+		   width:56%;
+		   margin-left:22px;
+		}
+		
+		#iconwidechart {
+		 display: inline-block;
+		}
+		
+		 #swapDex {
+          display: block;
+        }
+		
+		#Info{
+		   display : block;
+		}
+		
+		#LeftTabel{
+		 display : block;
+		}
+		
+		#righttabel {
+		 display : block;
+		}
+		
+		#TabelHistory {
+		   width:56%;
+		   margin-left: 20px;
+		}
+		
+		.searchcoin_input {
+	      width:56%;
+		  margin-left: 20px;
+		}
+		
+		.highlow {
+		  width:24%;
+		}
+		
+		.selectchainnetwork{
+		 width:15%;
+		}
+		#coinname {
+		font-size:20px; 
+		}
+	 }
+	 
+	 @media only screen and (max-width: 1024px) {
+	     #switchmode {
+		   display : none;
+		 }
+		 
+		 .labelconnect {
+		   display : none;
+		 }
+		 
+		 .dropdownLang-content {
+		  right : 20px;
+		}
+		 
+		   .headertopmiddle {
+		   width:35%;
+		 }
+		 
+		 .searchcoin_input {
+		  width:100%;
+		  margin-left: 0px;
+		}
+		
+		.highlow {
+		  width:100%;
+		}
+		
+		.selectchainnetwork {
+		 width:100%;
+		}
+		 
+		 .ulmenu {
+		   display : none;
+		 }
+		 
+		 #TopHighlight{
+		 font-size:14px;
+		 width:100%;
+		 } 
+		 
+		#coinname {
+		font-size:16px; 
+		}
+		
+		
+		#Chart{
+		   width : 98%;
+		   margin-left:5px;
+		}
+		
+		#iconwidechart {
+		 display: none;
+		}
+		
+		 #swapDex {
+          display: none;
+        }
+		
+		#Info{
+		   display : none;
+		}
+		
+		#LeftTabel{
+		 display : none;
+		}
+		
+		#righttabel {
+		 display : none;
+		}
+		
+		#TabelHistory {
+		   width:98%;
+		   margin-left:5px;
+		}
+		
+		.showinfo {
+		display : none;
+		}
+		
+		.showswap {
+		display : none;
+		}
+		
+		 
+		 #ULSearchCoin {
+            width: 85%;
+            margin-left: 22px;
+		 }
+		 
+		  .ulmenu li {
+		     float: left;
+             margin-right: 0px;
+             margin-bottom: 55px;
+           
+		   }
+		 	
+		#Time{
+		 display : none;
+		}
+		
+		
+			
+      }	  
+
+
+
+#HistoryAllTransaction{
+  display : block;
+  }
+
+#TableHolders{
+  display : none;
+  }
+
+#TableNews{
+  display : none;
+  }
+
+#DetailInfo {
+ display : none;
+} 
+ 
+ #buttonhistory {
+   background-color:#25b0c7;
+   color: black;
+ }
+ 
+  #buttonHolders {
+   background-color:#cae7e4;
+   color: gray;
+ }
+ 
+ #buttonNews {
+   background-color:#cae7e4;
+   color: gray;
+ }
+ 
+ #buttonDetail{
+   background-color:#cae7e4;
+   color: gray;
+ }
+ 
+ #buttonhistory:hover {
+  color :black;
+ }
+ 
+ #buttonHolders:hover {
+  color :black;
+ }
+ 
+ #buttonNews:hover {
+   color :black;
+ }
+ 
+ #buttonDetail:hover {
+   color :black;
+ }
+
+<!--  Live Chain  -->
+*:before, *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.video__icon {
+display: inline-block;
+}
+  
+  .video__icon .circle {
+    background: #22ad9d;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    position: relative;
+    opacity: .8; }
+	
+    .video__icon .circle:after {
+      content: '';
+     
+      border: 2px solid #22ad9d;
+      border-radius: 50%;
+      width: 16px;
+      height: 16px;
+      top: -4px;
+      left: -4px;
+      position: absolute;
+      opacity: .8;
+      -webkit-animation: circle 2s ease-in-out .2s infinite;
+              animation: circle 2s ease-in-out .2s infinite; }
+			  
+  .video__icon p {
+    color: #000;
+    text-align: center;}
+
+@-webkit-keyframes circle {
+  from {
+    -webkit-transform: scale(1);
+            transform: scale(1); }
+  
+  to {
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    opacity: 0; } }
+
+@keyframes circle {
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    }
+  
+  to {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+    opacity: 0;
+    } }
+
+	<!-- End symbol live  -->
+	
+body {font-family: Arial, Helvetica, sans-serif;} 
+ 
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+	
+body {
+background-color: rgb(229, 244, 249);
+font-family:  'Roboto', sans-serif;
+}
+
+.textblur {
+filter: blur(20px);-webkit-filter: blur(5px);
+}
+
+
+#mode {
+color:orange;
+}
+
+
+.tombolmode {
+	background-color: rgba(0,0,0,0.7);
+	border-radius: 0.75em;
+	
+	color: #fdea7b;
+	display: inline-flex;
+	align-items: center;
+	margin: auto;
+	padding: 0.15em;
+	width: 3em;
+	height: 1.5em;
+	transition: background-color 0.1s 0.3s ease-out, box-shadow 0.1s 0.3s ease-out;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+.tombolmode:before, .tombolmode:after {
+	content: "";
+	display: block;
+}
+.tombolmode:before {
+	background-color: #d7d7d7;
+	border-radius: 50%;
+	width: 1.2em;
+	height: 1.2em;
+	transition: background-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+	z-index: 1;
+}
+.tombolmode:after {
+	background:
+		linear-gradient(transparent 50%, rgba(0,0,0,0.15) 0) 0 50% / 50% 100%,
+		repeating-linear-gradient(90deg,#bbb 0,#bbb,#bbb 20%,#999 20%,#999 40%) 0 50% / 50% 100%,
+		radial-gradient(circle at 50% 50%,#888 25%, transparent 26%);
+	background-repeat: no-repeat;
+	border: 0.25em solid transparent;
+	border-left: 0.4em solid #d8d8d8;
+	border-right: 0 solid transparent;
+	transition: border-left-color 0.1s 0.3s ease-out, transform 0.3s ease-out;
+	transform: translateX(-22.5%);
+	transform-origin: 25% 50%;
+	width: 1.2em;
+	height: 1em;
+}
+/* Checked */
+.tombolmode:checked {
+	background-color: rgba(0,0,0,0.45);
+	box-shadow: 0.125em 0.125em 0 0.125em rgba(0,0,0,0.1) inset;
+}
+.tombolmode:checked:before {
+	background-color: currentColor;
+	transform: translateX(125%)
+}
+.tombolmode:checked:after {
+	border-left-color: currentColor;
+	transform: translateX(-2.5%) rotateY(180deg);
+}
+
+#trust {
+    background: #d93d3d;
+    border-radius: 13px;
+    height: 7px;
+}
+
+#trust:after {
+    content: '';
+    display: block;
+    background: #22ad9d;
+    width: 50%;
+    height: 100%;
+    border-radius: 9px;
+     padding: 0px;
+}	
+
+
+.disabled {
+    pointer-events:none; 
+    opacity:0.6;        
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 2px solid #dde5e3;
+  background-color: #f1f1f1;
+  margin-top: -20px;
+  border-radius:8px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 11px 12px;
+  transition: 0.3s;
+  font-weight:600;
+  font-size: 15px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 10px 18px;
+  border: 2px solid #dde5e3;
+  border-top: none;
+  height:750px;
+   border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin-top: -5px;
+}
+
+#textcopy {
+padding:0px 3px;
+background-color:#737a77;
+color:white;
+border-radius:5px;
+display:none;
+}
+
+.typewrite label{
+font-weight : 600;
+}
+
+.typewrite {
+display :none;
+}
+
+#showdelete_watchlist{ 
+  display : none;
+}
+
+/* ToolTIp Share Social Media*/
+.share-link {
+  position: relative;
+  text-align: center;
+  height: 10px;
+  width: 10px;
+  line-height: 32px;
+  text-decoration: none;
+}
+.share-link .toggle {
+  text-decoration: none;
+}
+.share-link.abs {
+  right: 10px;
+  bottom: 10px;
+  position: absolute;
+}
+.share-link .tip {
+  display: none;
+  position: absolute;
+  width: 128px;
+  transform: translate(301px, -65px);
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 5px 5px 5px);
+}
+
+ @media only screen and (max-width: 1024px) {
+ .share-link .tip {
+  display: none;
+  position: absolute;
+  width: 128px;
+  transform: translate(201px, -65px);
+  filter: drop-shadow(rgba(0, 0, 0, 0.3) 5px 5px 5px);
+}
+ }
+
+.share-link .tip.up {
+  display: block;
+}
+.share-link .link {
+  color: #fff;
+  height: 26px;
+  width: 27px;
+  line-height: 30px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+.share-link .link:last-of-type {
+  border: none;
+}
+.share-link .link.facebook {
+  border-radius:30%;
+  /* background-color: #3b5998; */
+  background-color: #b1daef;
+  
+}
+.share-link .link.reddit {
+   border-radius:30%;
+  /* background-color: #FF4500; */
+   background-color: #b1daef;
+}
+.share-link .link.twitter {
+   border-radius:30%;
+ /* background-color: #55acee; */
+   background-color: #b1daef;
+}
+
+.share-link .link.telegram {
+   border-radius:30%;
+ /* background-color: #0088cc; */
+   background-color: #b1daef;
+}
+
+/* End ToolTIp Share Social Media*/
+
+
+	 </style>
+  </head>
+  <body>
+ 
+  <div class="headertop" style="width:100%">
+  <div class="headertopleft" style="width:18%;float:left;">
+  <label id="switchmode" style="float:left;margin-right:4px;font-weight:600">Mode: </label>
+  <input onclick="modeFunction()" class="tombolmode" type="checkbox" style="float:left;cursor:pointer;" checked title="switch mode"> 
+  <label id="mode" style="float:left;margin-left:5px;font-weight:600;">Light</label> 
+  </div>
+  
+  <div class="headertopmiddle" style="float:left;">
+  <a href="https://swap.kanalcoin.com/"> <img  src="/Image/Kanalcoin-Swap-logo.png" style="width:126px; height:57px;align:middle;vertical-align:middle;float:left;"/></a>
+  <span style="float:left;">
+  <ul class="ulmenu">
+  <li><a href="/Trade.html">Trade</a></li>
+  <li><a href="/Chart.html">Charts</a></li>
+  <li><a href="/Stake.html">Stake</a></li>
+  <li class="disabled"><a href="#">Bridge</a></li> 
+  <li class="disabled"><a href="#">Analytics</a></li> 
+  <li><a href="/Tools.html">Tools</a></li> 
+  </ul> </span>
+  </div>
+  
+
+<div class="headertopright" style="width:30%;float:right;margin-top:6px;display:contents;">
+ <span data-tootik="Connect Wallet" data-tootik-conf="bottom" style="float:right;"><div onclick="connectWC()" class="connect" style="float:right;margin-right:10px;padding:7px 10px;border:1px solid #ababab;border-radius:8px;cursor:pointer;margin-left:3px;text-align:center;"><i class="fa-solid fa-wallet"></i> <label class="labelconnect">Connect</label></div></span>
+  <i  onclick="FunctionLang()" id="globeicon" class="fa-solid fa-globe" style="font-size:22px;vertical-align: middle;cursor: pointer;margin-right:12px;float:right;padding: 7px;color:black;">
+ <div id="DropdownLang" class="dropdownLang-content">
+    <a href="#">English</a>
+    <a href="#">Espanol</a>
+    <a href="#">Bahasa Indonesia</a>
+	 <a href="#">Italiano</a> 
+	 <a href="#">Việt Nam</a>
+	 <a href="#">繁體中文</a>
+	 <a href="#">한국어</a>
+  </div>
+ </i>
+ 
+  <span data-tootik="Browser Notification" data-tootik-conf="bottom" style="float:right;"><i id="iconnotification"  onclick="alertnotifFunction()" class="fa fa-bell-slash" style="font-size:22px;color:black;vertical-align: middle;cursor: pointer;margin-right:4px;float:right;padding:7px;"></i></span>
+</div> 
+ </div>
+
+
+<div style="clear:both;"></div>
+ <center>
+ <div id="TopHighlight" style="width:95%;font-size:14px;"> 
+ <div style="width:16%;float:left;font-weight:600;"> TOP HIGHLIGHT (24H): </div>
+  <div style="width:68%; float:left;margin-right:5px;">
+  <marquee onmouseover="this.stop();" onmouseout="this.start();" scrolldelay="30">
+                                   
+ <span style="margin-left:30px;font-weight:700;">(1)???</span>
+ <span style="margin-left:30px;font-weight:700;">(2)???</span>
+ <span style="margin-left:30px;font-weight:700;">(3)???</span>
+ <span style="margin-left:30px;font-weight:700;">(4)???</span>
+ <span style="margin-left:30px;font-weight:700;">(5)???</span>
+  <span style="margin-left:30px;font-weight:700;">(6)???</span>
+   <span style="margin-left:30px;font-weight:700;">(7)???</span>
+    <span style="margin-left:30px;font-weight:700;">(8)???</span>
+ <span style="margin-left:30px;font-weight:700;">
+ #???<sup style="color:white;padding:2px;background-color:orange;border-radius:2px;">sponsored</sup></span>
+ </marquee>
+  </div> 
+  <span id="Time" style="float:left;font-weight:600;margin-left:18px;font-size:14px;"> </span> <img id="liveicongif" src="/Image/Live-white-light.gif" height="25" width="30" style="align:middle; vertical-align:middle;margin-right:4px;margin-top: -5px; margin-left: -25px;position:absolute;">
+ </div>
+ </center> 
+ <div style="clear:both;"></div>
+ <br/>
+ <hr style="margin-bottom:6px;margin-top:-5px;height:1px;background-color:black;>
+ 
+<div style="width:100%">
+
+<div class="selectchainnetwork" style="float:left;margin-left:10px;"> 
+ <div Style="margin-left:29px;font-size:14px;font-weight:600;color:#22ad9d;margin-bottom:2px;">Select Chain Network</div> 
+ <div class="video__icon" >
+  <div class="circle"></div>
+</div> 
+  <select id="selectchain" style="height:46px;border-radius:8px;margin-left:5px;width:85%;color:green;font-weight:600; border: 2px solid #dde5e3;" title="Select Blockchain Network">
+    <option>Binance Smart Chain</option>
+    <option>Ethereum (Cooming Soon)</option>
+	<option>Avalanche (Cooming Soon) </option>
+	<option>Fantom (Cooming Soon) </option>
+	<option>Harmony (Cooming Soon) </option>
+	<option>Polygon (Cooming Soon) </option>
+    <option>Cronos (Cooming Soon) </option>
+	<option>Aurora (Cooming Soon) </option>
+	<option>Heco(Cooming Soon) </option>
+  </select>
+</div>
+
+<div class="searchcoin_input" style="float:left;"> 
+ 
+<i class="fas fa-search" style="position:absolute; padding: 32px 15px;font-size:20px;color: #BFC5C3;"></i>  <input type="search" id="Inputsearchcoin" onkeyup="SFunction()" style="height:46px;border-radius:12px;margin-top:19px; padding: 10px 10px 10px 40px; width:100%;    border: 2px solid #dde5e3;" placeholder="Enter Token, Symbol, Name, or Contract">
+ 
+  <ul id="ULSearchCoin" style="display:none;">
+  <li><a href="/BSC/Bitcoin-Cash-(BCH).html" target="_blank">Bitcoin Cash (BCH)</a></li>
+  <li><a href="/BSC/ChainLink-(LINK).html" target="_blank">ChainLink (LINK</a></li>
+  <li><a href="/BSC/Dogecoin-(DOGE).html" target="_blank">Dogecoin (DOGE)</a></li>
+  <li><a href="/BSC/Ethereum-(ETH).html" target="_blank">Ethereum (ETH)</a></li>
+  <li><a href="/BSC/Fantom-(FTM).html" target="_blank">Fantom (FTM)</a></li>
+  <li><a href="/BSC/Litecoin-(LTC).html" target="_blank">Litecoin (LTC)</a></li>
+    <li><a href="/BSC/Maker-(MKR).html" target="_blank">Maker (MKR)</a></li>
+	<li><a href="/BSC/Tron-(TRX).html" target="_blank">Tron (TRX)</a></li>
+</ul>
+
+</div>
+  
+ <div class="highlow" style="float:left;margin-left:30px;margin-top: 35px;">
+
+ <span class="highlow24h">
+    <label style="background-color:#dee6e9;padding:3px;font-size:14px;">High (24h) : <b class="High24Hour" style="font-size:15px;color:#22ad9d;"></b>  </label>&nbsp;&nbsp;&nbsp;&nbsp;
+   <label style="background-color:#dee6e9;padding:3px;font-size:14px;">Low (24h) : <b class="Low24Hour" style="font-size:15px;color:#22ad9d;"></b> </label><br/>	
+   </span>  
+ </div> 
+ 
+</div> 
+ 
+ <div style="clear:both;"></div>
+
+    <div style="width:100%;"> 
+	
+	<div  id="Info" style="width:14%;float:left;margin-top:55px;margin-bottom:0px;margin-left:10px;background-color:white;padding-bottom:10px;padding-top:8px;padding-left:8px;border-radius:8px;font-size:15px;border: 2px solid #dde5e3;">
+	 <div style="margin-top:-33px;font-weight:600;padding-bottom:8px;font-size:16px"><i class="fa-solid fa-chart-line"></i> SUMMARY TOKEN </div><br/>
+	
+	  Token Name<br/>
+	  <b style="color:#22ad9d;">Ethereum (ETH)</b>  <br/><hr style="width:97%;border:0.5px solid #dde5e3;margin-left:-2px;">
+	  
+	  Price Token<br/>
+	  <b class="current_pricecoin" style="color:#22ad9d;"> </b>  <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	  
+	  Trading Volume (24h)<br/>
+	 <b class="TotalVolume" style="color:#22ad9d;"> </b> <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	  
+	  Market Cap<br/>
+	 <b class="MarketCapCoin" style="color:#22ad9d;"> </b> <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	   
+	   Total Liquidity <br/>
+	 <b class="textblur" style="color:#22ad9d;"> $X.XXX.XXX USD </b>
+	<span data-tootik="You have to stake at least 5000 utility tokens to see it" data-tootik-conf="multiline"><i class="fa fa-info-circle" aria-hidden="true" style="font-size:18px;"></i></span> <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	     
+	  Circulating Supply <br/>
+	 <b class="CirculatingSupply" style="color:#22ad9d;"> </b><br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	  
+	   Total Supply (BSC) <br/>
+	 <b style="color:#22ad9d;">1,404,999.99 ETH </b><br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;"> 
+	 
+	  All Time High (ATH) <br/>
+	 <b class="Ath" style="color:#22ad9d;"> </b><br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	 
+	 Total Holders<br/>
+	 <b class="textblur" style="color:#22ad9d;"> X,XXX,XXX</b> <span data-tootik="You have to stake at least 5000 utility tokens to see it" data-tootik-conf="multiline"><i class="fa fa-info-circle" style="font-size:18px;"></i></span><br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	 
+	  Token Contract (BSC) <span id="textcopy">Copied!</span><br/> 
+	 <b id="copycontract" style="word-wrap:break-word;font-size:15px;color:#22ad9d;">0x2170Ed0880ac9A755fd29B2688956BD959F933F8</b> &nbsp;<span data-tootik="Click Copy" data-tootik-conf="right"><i onclick="copyToClipboard('#copycontract',this)" class="fas fa-copy" style="cursor:pointer;color:#737a77;"></i></span>
+	 <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+
+	 Official Website<br/>
+	 <b>
+<a href="https://ethereum.org/en/" rel="nofollow" style="text-decoration:none;color:#22ad9d;"><i class="fa fa-globe" style="font-size:24px;margin-right:10px;align:middle; vertical-align:middle;"></i>ethereum.org</a>	  
+	 </b> <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	 
+	Social Media Link<br/>
+	 <b>
+	 
+<a href="https://twitter.com/ethdotorg" style="color:#1DA1F2" rel="nofollow"><i class="fa fa-telegram" style="font-size:24px;margin-right:10px;align:middle; vertical-align:middle;"><br/><div style="font-size:10px;text-align:center;margin:4px;color:#22ad9d;">27.3K+</div></i></a>
+
+<a href="https://discord.com/invite/CetY6Y4" style="color:#5865F2" rel="nofollow"><i class="fa fa-telegram" style="font-size:24px;margin-right:10px;align:middle; vertical-align:middle;"><br/><div style="font-size:10px;text-align:center;margin:4px;color:#22ad9d;">-</div></i></a>
+
+	<a href="https://reddit.com/r/ethereum" style="color:#f96e1d;" rel="nofollow"> <i class="fa fa-reddit" style="font-size:24px;margin-right:10px;align:middle; vertical-align:middle;"><br/><div style="font-size:10px;text-align:center;margin:4px;color:#22ad9d;">1.3M+</div></i></a>
+	  
+	 </b>
+	 <br/><hr style="width:97%;border:1px solid #dde5e3;margin-left:-2px;">
+	 Categories <br/>
+	 <b style="color:#22ad9d;">Smart Contract</b>
+	
+	 
+	
+	   
+	</div>
+	
+  <div id="Chart" style="float:left;margin-top:30px;margin-bottom:0px;"> 
+   <!-- TradingView Light Widget  BEGIN -->
+<div id="tradingviewlight" class="tradingview-widget-container">
+<span id="coinname" style="margin-left:5px;margin-bottom:20px;font-weight:600;"><img src="https://assets.coingecko.com/coins/images/279/large/ethereum.png?1595348880" style="height:31px;width:31px;align:middle; vertical-align:middle;"> Ethereum (ETH/USDT)
+
+<span data-tootik="Add Wathchlist"><a href="#" onclick="watchlistclick()"> <i  id="iconwatchlistcoin" onclick="staricon()" class="fa fa-star-o" style="font-size:25px;color:orange;vertical-align: middle;cursor: pointer;margin-right:15px;" title="Add Watchlist"></i></a></span>
+
+<span class="share-link">
+ <a class="toggle" href="javascript:void(0);"><span data-tootik="Share" data-tootik-conf="bottom"><i id="shareicon" class="fa fa-share-alt" aria-hidden="true" style="font-size:24px; vertical-align: middle;cursor: pointer;margin-right:15px;color:#685f5f;" title="Share"></i></span> </a> 
+ <div class="tip">
+    <a class="link facebook" href="javascript:void(0);"><i class="fa fa-facebook"></i></a>
+    <a class="link twitter" href="javascript:void(0);"><i class="fa fa-twitter"></i></a>
+	<a class="link telegram" href="javascript:void(0);"><i class="fa fa-telegram"></i></a>
+	<a class="link reddit" href="javascript:void(0);"><i class="fa fa-reddit"></i></a>
+  </div>
+</span>
+
+<span data-tootik="Enlarge Chart"><i  id="iconwidechart" onclick="WideChart()"  class="fa fa-desktop" aria-hidden="true" style="font-size:20px;align:middle; vertical-align:middle;color:#685F5E;cursor:pointer;"></i></span>
+<button class="showinfo" onclick="HideInfo()" style="margin-left:5px;padding:8px 6px;border-radius:7px;border: 1px solid #a4adaa;background-color: #dee6e9;"><label id="buttonshowinfo" style="cursor:pointer;"> << Hide Info </label></button> 
+<button class="showswap" onclick="HideSwap()" style="margin-left:5px;padding:8px 6px;border-radius:7px;border: 1px solid #a4adaa;background-color: #dee6e9;"><label id="buttonshowswap" style="cursor:pointer;"> Hide Swap >> </label></button> 
+</span> 
+<span class="current_pricecoin" style="float:right;font-size:32px;font-weight:600;background-color:#22ad9d;color:white;margin-bottom:5px;padding:1px;display: inline-block;">  </span> <br/>
+<div id="topchart" style="padding: 8px;margin-top:10px;background-color:white;font-weight:600; border: 2px solid #dde5e3; border-top-left-radius:8px; border-top-right-radius:8px;"> 
+<a href="https://coinmarketcap.com/currencies/ethereum/" target="_blank" rel="nofollow" style="color:#3a74bb;text-decoration:none;font-size:15px;"><img src="/Image/coinmarketcaplogo.png" style="height:20px;width:20px;align:middle;vertical-align:middle;border-radius:5px;"> Coinmarketcap</a> &nbsp; &nbsp;
+<a href="https://www.coingecko.com/en/coins/ethereum" target="_blank" rel="nofollow" style="color:#3a74bb;text-decoration:none;font-size:15px;"><img src="/Image/coingeckologo.png" style="height:20px;width:20px;align:middle;vertical-align:middle;border-radius:5px; ">Coingecko</a>  &nbsp; &nbsp;  <a href="https://www.kanalcoin.com/currencies/ETH/ethereum/USD/" target="_blank" rel="nofollow" style="color:#3a74bb;text-decoration:none;"font-size:15px;><img src="/Image/kanalcoinlogo.png" style="height:20px;width:20px;align:middle;vertical-align:middle;border-radius:5px;">Kanalcoin</a>
+<span style="font-size:12px;float:right;padding:3px; background-color:#dee6e9;border-radius:4px; "> <i class="fa-solid fa-eye" > </i> on 140.000 watchlist </span>
+</div>
+
+<div id="tradingview_light" style="border: 2px solid #dde5e3;border-top:none;display:block;"></div>
+<div id="tradingview_dark" style="border: 2px solid #dde5e3;border-top:none;display:none;"></div>
+  <div class="tradingview-widget-copyright" style="margin-top:10px;"><a href="https://id.tradingview.com/symbols/ETHUSDT/?exchange=BINANCE" rel="noopener" target="_blank"><span class="blue-text" style="float:left;">ETH to USDT </span></a><label style="float:left;">&nbsp;- Chart oleh TradingView</label>
+  <label style="float:right;color:#9db2bd;font-weight:600;">&nbsp; Check History Tx, List of Holders, News & Token Overview</label>
+  </div>
+  <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+  <script type="text/javascript">
+
+  
+  new TradingView.widget(
+  {
+  "width": "100%",
+  "height": 750,
+  "symbol": "BINANCE:ETHUSDT",
+  "interval": "15",
+  "timezone": "Asia/Jakarta",
+  "theme": "light",
+  "style": "1",
+  "locale": "id",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+  "container_id": "tradingview_light"
+}
+  ); 
+  
+ new TradingView.widget(
+  {
+  "width": "100%",
+  "height": 750,
+  "symbol": "BINANCE:ETHUSDT",
+  "interval": "15",
+  "timezone": "Asia/Jakarta",
+  "theme": "dark",
+  "style": "1",
+  "locale": "id",
+  "toolbar_bg": "#f1f3f6",
+  "enable_publishing": false,
+  "hide_side_toolbar": false,
+  "container_id": "tradingview_dark"
+}
+  ); 
+  
+    
+  </script>
+</div>
+<!-- TradingView Widget END -->
+  </div>
+  
+  
+  <div id="swapDex" class="swap" style="width:25%;float:right;margin-top:50px;margin-bottom:0px;" >
+  <div class="tab">
+  <button class="tablinks active" onclick="TabSFW(event, 'Swap')"><i class="fas fa-sync-alt"></i> SWAP</button>
+  <button class="tablinks" onclick="TabSFW(event, 'Forum')"><i class="fa-solid fa-comments"></i> FORUM</button>
+  <button id="watchlistclick" class="tablinks" onclick="TabSFW(event, 'Watchlist')"><i class="fa fa-star-o"></i> WATCHLIST</button>
+</div>
+
+<div id="Swap" class="tabcontent" style="display:block;">
+<center><div style="margin-top:7px;font-size:15px;margin-bottom:-7px;font-weight:600;color:#4d6fa3;">ETH Buy/Sell Tax  : <b style="color:#22ad9d;">0%</b> / <b style="color:#22ad9d;"> 0%</b></div></center>
+  <div  style="height:650px"
+      id="arken-root"
+      data-chain="bsc"
+      data-mode="light"
+      data-theme_color="#4d6fa3"
+      data-theme_text_color="white"
+      data-base_token_address="0x55d398326f99059ff775485246999027b3197955"
+      data-quote_token_address="0x2170ed0880ac9a755fd29b2688956bd959f933f8"
+      data-external_top_token_address="[]"
+      data-custom_image_token="{}"
+       data-widget_type="swap"
+      data-graph_range="1"
+      data-max_width="637px"
+      data-height="42.39%"
+      data-background_color_light= "#dee6e9"
+      data-background_color_dark= ""
+    ><br/> </div>
+    <script async src="https://widget.arken.finance/widget.js"></script>
+	<br/> <center>
+	<div style="margin-left:1px;color:#4d6fa3;"><b>Or Swap ETH to : </b><br/><br/> <a href="https://pancakeswap.finance/swap?inputCurrency=0x2170Ed0880ac9A755fd29B2688956BD959F933F8&outputCurrency=0x55d398326f99059fF775485246999027B3197955" target="_blank" style="font-weight:600;text-decoration: none;font-size:15;color:#4d6fa3;"><img src="/Image/PancakeswapLogo.png" height="22" width="22" style="align:middle; vertical-align:middle;"> Pancakeswap V2</a> &nbsp; or &nbsp;
+	 <a href="https://apeswap.finance/swap?inputCurrency=0x2170Ed0880ac9A755fd29B2688956BD959F933F8&outputCurrency=0x55d398326f99059fF775485246999027B3197955" target="_blank" style="font-weight:600;text-decoration: none;font-size:15;color:#4d6fa3;"><img src="/Image/Apeswaplogo.png" height="23" width="23" style="align:middle; vertical-align:middle;"> Apeswap</a> </div> </center>
+</div>
+
+<div id="Forum" class="tabcontent">
+<div style="width:100%;">
+<div Style="font-size:14px;margin:5px 0px;"><b style="color:blue;">Channel</b> : ETH - Binance Smart Chain <br/>
+<b style="color:blue;">Live Online</b>: <b class="textblur">100 </b> <i class="fa-solid fa-eye" style="font-size:12px;" > </i>
+</div>
+<div  id="forumlive" style="border:1px solid #918d8d; border-radius:10px; height:630px;margin-bottom:8px;padding-top:5px;">
+
+<div style="margin:3px 8px;  display: inline-flex; align-items: center;">
+ <i class="fa-solid fa-user-astronaut" style="font-size:22px;float:left;margin-right:6px;"></i>
+ <div style="float:left;"> <b style="font-size:14px;color:blue;">Frank:</b> <b style="font-size:14px;margin-left:2px;"> How are you today ?  </b>  </div>
+</div>
+
+<br/ style="clear:both;">
+
+<div style="margin:3px 8px;  display: inline-flex; align-items: center;">
+ <i class="fa-solid fa-user-astronaut" style="font-size:22px;float:left;margin-right:6px;"></i>
+ <div style="float:left;"> <b style="font-size:14px;color:blue;">Bill:</b> <b style="font-size:14px;margin-left:2px;"> Good </b>  </div>
+</div>
+
+<br/ style="clear:both;">
+
+</div>
+
+
+<textarea style="border:1px solid #918d8d; height:35px; border-radius:10px; margin-bottom:5px;width:100%;float:left;resize:none;padding:8px;background-color: #e5e8eb;" maxlength="80" placeholder="Message..." ></textarea>
+<br/>
+<div id="ButtonModal" style="padding:5px 10px;border-radius:7px;background-color:#3a74bb;float:right;font-weight:600;color:white;font-size:12px;cursor:pointer;">Send</div>
+
+<!-- The Modal -->
+<div id="modalid" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+  <span class="close">&times;</span>
+        <h2>Information</h2>
+    </div>
+    <div class="modal-body">
+      <p>You must be connected to the wallet to start the chat</p>
+     
+    </div>
+  </div>
+</div>
+<!-- end The Modal -->
+
+</div>
+</div>
+
+<div id="Watchlist" class="tabcontent">
+
+
+ <div id="imgwatchlistzero" style="text-align:center;margin: 240px 40px;"> <br/>
+<img src="https://www.kickfire.com/img/icon-watchlist-grey.png" height="60" width="60"> <br/>
+<span style="color:grey;font-size:20px;">Looks like you haven't made a watchlist list</span>
+</div>
+
+
+
+
+
+<div id="showdelete_watchlist">
+   <i id="iconwatchlistcoin" onclick="staricon()" class="fa fa-star" style="font-size:18px;color:orange;cursor: pointer;margin-right:5px;">
+</i> <span style="font-size:18px;font-weight:600">ETH</span> - <label class="current_pricecoin" style="font-size:16px;margin-right:10px;color:green;font-weight:600;"> </label> &nbsp;- <label style="font-size:12px;">(BSC) </label>
+<div style="margin-left:25px;font-size:12px;">
+- Buy Position = $<b id="BP">--</b> &nbsp;&nbsp; <a id="ButtonBuySellModal" href="#" style="color:green;font-size:12px;"> (Set <i class="fa fa-bell" style="font-size:12px;color:#726f6b;cursor: pointer;"></i>)</a><br/>
+- Sell Position = $<b id="SP">--</b> &nbsp;&nbsp;  </div>
+<hr>
+</div>
+
+<!-- The Modal -->
+<div id="ModalRememberBS" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <form id="FormRememberwatchlist">
+     <h2><i id="ButtonBuySellModal" class="fa fa-bell"></i> Set Buy and Sell Position Reminder</h2>
+
+    <fieldset>
+        <label>Buy Position</label><input type="text" id="buyposition" name="buyposition" maxlength="8" size="8" />$ &nbsp;&nbsp;&nbsp;
+         <label>Sell Position</label><input type="text" id="sellposition" name="sellposition" maxlength="8" size="8" />$  </label>
+    </fieldset> <br/>
+	You will get a notification when it is activated
+    <input class="close" type="submit" value="Save & Exit" style="float:right;margin-top:-6px;font-size:15px;"> </input>
+</form>
+  </div>
+</div>
+
+
+</div>
+	
+</div>
+</div>
+
+  <div style="clear:both;"></div>
+
+<div style="width:100%;">
+<div id="LeftTabel" style="width:15%;float:left;margin-left:10px;border-radius:8px;">
+<div  id="paperdocs" style="border:2px solid #dde5e3;border-radius:6px; padding:8px 5px;background-color:white;font-size:15px;">
+  <center> <i class="fa fa-file-text-o" style="font-size:16px"></i> <label style="font-weight:600;font-size:16px;">CHECK PAPER DOCS:</label></center>   <br/>
+   
+   <a href="https://github.com/ethereum/wiki/wiki/White-Paper" rel="nofollow" style="font-weight:600;color:#3a74bb;">&#9755; Whitepaper</a> <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i><br/ style="clear:both;">
+   
+ <label style="text-decoration: line-through;font-weight:600;">&#9755; Audit Paper</label> <i class="fa-solid fa-circle-minus" style="float:right;color:grey;"></i><br/ style="clear:both;">
+  
+  <label style="text-decoration: line-through;font-weight:600;">&#9755; KYC</label> <i class="fa-solid fa-circle-minus" style="float:right;color:grey;"></i><br/ style="clear:both;">
+  
+   <a href="https://en.wikipedia.org/wiki/Ethereum" style="font-weight:600;color:#3a74bb;" rel="nofollow">&#9755; Wikipedia (Wiki)</a> 
+     <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i><br/ style="clear:both;">
+	 
+	 <label style="text-decoration: line-through;font-weight:600;">&#9755; Profile Teams on Website</label> <i class="fa-solid fa-circle-minus" style="float:right;color:grey;"></i><br/ style="clear:both;">
+	 
+  <a href="https://bscscan.com/token/0x2170ed0880ac9a755fd29b2688956bd959f933f8" style="font-weight:600;color:#3a74bb;">&#9755; Contract on BSC</a> 
+   <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i> <br/ style="clear:both;">
+   
+  <label style="text-decoration: line-through;font-weight:600;">&#9755; Dev Wallet on BSC</label>  <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i><br/ style="clear:both;">
+  
+	    <label style="text-decoration: line-through;font-weight:600;">&#9755; Tokenomics</label> <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i> <br/ style="clear:both;">
+		
+		 <label style="text-decoration:line-through;font-weight:600;">&#9755; Liquidity Locker</label> <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i><br/ style="clear:both;">
+		 <a href="https://honeypot.is/?address=0x2170Ed0880ac9A755fd29B2688956BD959F933F8" rel="nofollow" style="font-weight:600;color:#3a74bb;">&#9755; Check HoneyPot</a> <i class="fa-solid fa-circle-check" style="color:#22ad9d;float:right;"></i><br/ style="clear:both;"> <br/>
+		  <a href="#" style="text-decoration: underline;font-weight:500;font-size:11px;color:#3a74bb;">Read more to Avoid RugPull/Scam Token <i class="fa fa-info-circle" aria-hidden="true"></i></a> <br/>
+</div> <br/>
+
+<div id="votetoken" style="border:2px solid #dde5e3;border-radius:6px; text-align:center;padding:8px 1px;background-color:white;">
+<center>
+<i class="fas fa-poll"  style="font-size:16px"></i> <label style="font-weight:600;font-size:16px;">VOTE</label>  <br/><br/>
+<span style="margin-top:4px;font-weight:600;font-size:16px;color:#22ad9d;">How is this token trading today?</span> <i class="fa fa-info-circle" aria-hidden="true" title="You have to stake at least 5000 utility tokens can  vote this token" style="font-size:16px;"></i></center><br/>
+<div style="margin-top:10px;">
+<div id="trust"></div>
+<span style="float:left;">
+<i onclick="vote()" class="fa fa-thumbs-up" aria-hidden="true" style="font-size:22px;margin:2px;color:#22ad9d;cursor:pointer;"></i> <br/><label style="font-size:16px;font-weight:600;color:#22ad9d;">50%</label>
+</span>
+
+<span style="float:right;">
+<i onclick="vote()" class="fa fa-thumbs-down" aria-hidden="true" style="font-size:22px;margin-top:2px;margin-bottom:2px;color:#d93d3d;cursor:pointer;"></i> <br/><label style="font-size:16px;font-weight:600;color:#d93d3d;">50%</label>
+</span>
+
+ <div style="clear:both;"></div> <br/>
+<center style="font-weight:600;">(0 Votes)</center>
+<p id="textvote" style="padding:5px;"></p>
+</div>
+
+<center>Vote About This Project</center>
+</div>
+</div>
+
+<div id="TabelHistory" style="float:left;background-color:white;border-radius:8px;border: 2px solid #dde5e3;">
+
+<div  onclick="Showhistorytx()" id="buttonhistory" style="padding:3px 15px;margin:10px;border-radius:8px;text-align:center;float:left;font-weight:600;cursor:pointer;">Transactions History</div> 
+<div  onclick="ShowHolders()" id="buttonHolders" style="padding:3px 15px;margin:10px;border-radius:8px;text-align:center;float:left;font-weight:600;cursor:pointer;">Holders</div> 
+<div onclick="ShowNews()" id="buttonNews" style="padding:3px 15px;margin:10px;border-radius:8px;text-align:center;float:left;font-weight:600;cursor:pointer;">News</div> 
+<div onclick="ShowDetailInfo()" id="buttonDetail" style="padding:3px 15px;margin:10px;border-radius:8px;text-align:center;float:left;font-weight:600;cursor:pointer;">Token Overview </div> 
+
+<div style="clear:both;"></div>
+
+<iframe id="HistoryAllTransaction" width="100%" height="525" allowFullScreen frameBorder="0" scrolling="no" src="https://coinbrain.com/embed/0x2170ed0880ac9a755fd29b2688956bd959f933f8?theme=light&chart=0&trades=1"></iframe>
+
+
+<table id="TableNews" style="width:98%; margin-left:1%;margin-right:1%;background-color: white; border : 2px solid rgb(229, 244, 249);border-radius :8px;">
+<thead>
+<tr style="height:50px;">
+<th style = "width:18%">Date</th>
+<th style = "width:60%">Title</th>
+<th style = "width:20%">Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1 hours ago</td>
+<td><a href="https://www.kanalcoin.com/dituduh-langgar-hak-cipta-dogecoin-foundation-tuntut-dogecoin-2-0/" target="_blank">Accused of copyright infringement, Dogecoin Foundation sues Dogecoin 2.0</a></td>
+<td>Kanalcoin</td>
+</tr>
+<tr class="textblur">
+<td>1 hours ago</td>
+<td><a href="https://www.kanalcoin.com/dituduh-langgar-hak-cipta-dogecoin-foundation-tuntut-dogecoin-2-0/" target="_blank">Accused of copyright infringement, Dogecoin Foundation sues Dogecoin 2.0</a></td>
+<td>Kanalcoin</td>
+</tr>
+<tr class="textblur">
+<td>1 hours ago</td>
+<td><a href="https://www.kanalcoin.com/dituduh-langgar-hak-cipta-dogecoin-foundation-tuntut-dogecoin-2-0/" target="_blank">Accused of copyright infringement, Dogecoin Foundation sues Dogecoin 2.0</a></td>
+<td>Kanalcoin</td>
+</tr>
+<tr height="370px">
+
+<td colspan="6" style="text-align:center;">The latest news data is not connected, read the latest Ethereum news on kanalcoin</td>
+</tr>
+</tbody>
+</table> 
+
+<table id="TableHolders" style="width:98%; margin-left:1%;margin-right:1%;background-color: white; border : 2px solid rgb(229, 244, 249);border-radius :8px;">
+<thead>
+<tr style="height:50px;">
+<th style = "width:20%">Amount</th>
+<th style = "width:25%">Value</th>
+<th style = "width:10%">Percentage</th>
+<th style = "width:43%">Address</th>
+</tr>
+</thead>
+<tbody>
+<tr class="textblur">
+<td>--- DOGE</td>
+<td>---,---,--- USD</td>
+<td>--%</td>
+<td>--------------------------</td>
+</tr>
+<tr class="textblur">
+<td>--- DOGE</td>
+<td>---,---,--- USD</td>
+<td>--%</td>
+<td>--------------------------</td>
+</tr>
+<tr height="440px">
+<td colspan="4" style="text-align:center;">
+You have to stake at least 5000 utility tokens to see Data Holders<br/>
+see <a href="https://bscscan.com/token/0x2170ed0880ac9a755fd29b2688956bd959f933f8#balances" rel="nofollow" target="_blank">List of Holder </a> on Bscscan</td>
+</tr>
+</tbody>
+</table> 
+
+<div id="DetailInfo" style="width:96%; margin-left:2%;margin-right:2%;background-color: white; border : 2px solid rgb(229, 244, 249);border-radius :8px;height:510px;">
+  Ethereum established by
+</div>
+
+<br/> <input type="submit" name="Search" Value="<<" style="height:30px;border-radius:8px; padding: 2px 9px;margin-left:10px;">
+      <input type="submit" name="Search" Value=">>" style="height:30px;border-radius:8px; padding: 2px 9px;margin-left:10px;">
+</div>
+<div id="righttabel" style="width:25%;float:right;"><div style="font-size:14px;text-align:center;margin:270px 30px;">
+<label style="padding:4px 10px;background-color:#fdfeff;border-radius:7px;">Put Your ADS Here</label>
+	
+</div>
+
+</div>
+</div>
+<div style="clear:both;"></div>
+<br/>
+<center>
+<div id="footer" style="width:90%;padding:10px;">  
+<hr>
+<span style="float:left;">  RealTime </span> 
+<a href="#" style="float:right;margin-right:10px;">Contact</a>
+<a href="#" style="float:right;margin-right:10px;">About</a>
+
+
+</div>
+<br/>
+</center>
+
+
+
+
+
+<!-- icon star -->
+
+<script>
+function staricon() {
+	var y = document.getElementById("showdelete_watchlist");
+    var watchzero  = document.getElementById("imgwatchlistzero"); 
+  if  (y.style.display ==="block") {  
+          watchzero.style.display = "block";  
+		 y.style.display = "none";	 
+		 
+		    document.getElementById("iconwatchlistcoin").classList.toggle("fa-star");
+		    document.getElementById("iconwatchlistcoin").classList.toggle("fa-star-o");
+	 } else { 
+	     watchzero.style.display = "none";
+		 y.style.display = "block";	 
+		 
+		    document.getElementById("iconwatchlistcoin").classList.toggle("fa-star-o");
+		   document.getElementById("iconwatchlistcoin").classList.toggle("fa-star");
+		   
+	 }
+   }
+</script>
+
+
+
+<script>
+function alertnotifFunction() {
+  var z   =  document.getElementById("iconnotification");
+
+  if (z.classList.toggle('fa-bell-slash') === true) {
+             z.classList.toggle("fa-bell");
+             z.classList.toggle("bell-slash");
+             alert("Don't Enable Browser Notifications on this coin, you won't receive browser notifications on coins");
+      } else {
+            z.classList.toggle("bell-slash");
+           z.classList.toggle("fa-bell");
+           alert("Activate Browser Notification on this Coin, you will receive Browser Notification on this coin");        
+      }
+}
+</script>
+
+<script>
+
+function vote() {   
+ document.getElementById("textvote").innerHTML = "You have to stake at least 5000 utility tokens can  vote this token";      
+}
+</script>
+
+<!-- Search Data Coin -->
+<script>
+function SFunction() {
+    var input, filter, ul, li, a, i, txtValue;
+    input = document.getElementById("Inputsearchcoin");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("ULSearchCoin");
+    li = ul.getElementsByTagName("li");
+    for (i = 0; i < li.length; i++) {
+        a = li[i].getElementsByTagName("a")[0];
+        txtValue = a.textContent || a.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1 && input.value!="") {
+           document.getElementById("ULSearchCoin").style.display = "block";
+            li[i].style.display = "";
+        } else {  
+            
+            li[i].style.display = "none";
+        }
+    }
+}
+</script>
+<!-- End Search Data Coin -->
+
+<script>
+function TabSFW(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+
+<!-- show watchlist when click watchlist icon, button watchlist is activated -->
+<script>
+function watchlistclick() {
+document.getElementById("watchlistclick").click();
+}
+  </script>
+
+ <script>
+ $.getJSON('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&ids=ethereum&order=market_cap_desc&per_page=100&page=1&sparkline=false', function(data){
+    var PriceCoin = `$ ${formatedNumber = new Intl.NumberFormat().format(data[0].current_price)}`;
+   var MarketCap= `$ ${formatedNumber = new Intl.NumberFormat().format(data[0].market_cap)} USD`;
+  var TotalVolume= `$ ${formatedNumber = new Intl.NumberFormat().format(data[0].total_volume)} USD`;
+  var CirculatingSupply= `${formatedNumber = new Intl.NumberFormat().format(data[0].circulating_supply)} ETH`;
+      var ath = `$ ${formatedNumber = new Intl.NumberFormat().format(data[0].ath)} USD`;
+	  var High24h = `$ ${formatedNumber = new Intl.NumberFormat().format(data[0].high_24h)}`;
+      var Low24h = `$ ${formatedNumber = new Intl.NumberFormat().format(data[0].low_24h)}`;
+                   
+    $(".current_pricecoin").html(PriceCoin);
+    $(".MarketCapCoin").html(MarketCap);
+    $(".TotalVolume").html(TotalVolume);
+    $(".CirculatingSupply").html(CirculatingSupply);
+    $(".Ath").html(ath);
+	$(".High24Hour").html(High24h);
+	$(".Low24Hour").html(Low24h);
+  });
+  </script>
+
+<!-- Copy Text to Clipboard -->
+<script>
+function copyToClipboard(element,x) {
+  var $temp = $("<input>");  
+  x.classList.toggle("fa-check-circle");  
+  
+  if  (x.classList.toggle("fa-copy")===true) {
+		  document.getElementById("textcopy").style.display = "none";
+	 } else {
+	       $("body").append($temp);
+           $temp.val($(element).text()).select();
+           document.execCommand("copy");
+           $temp.remove();
+		document.getElementById("textcopy").style.display = "inline-block";
+	 }
+}
+</script>
+
+<!-- Hide Info -->
+<script>
+function HideInfo() {
+     
+    var  z = document.getElementById("Info");
+	var  x = document.getElementById("swapDex");
+    var  y = document.getElementById("Chart");
+	
+    var ltabel =	document.getElementById("LeftTabel");
+	var rtabel =    document.getElementById("righttabel");
+	var historytabel = document.getElementById("TabelHistory")
+   
+  
+    if     (x.style.display === "none") {
+      if   (z.style.display === "none") {
+	        z.style.display = "block";
+			y.style.width = "81%";
+			ltabel.style.display = "block";
+			rtabel.style.display = "none";
+			historytabel.style.width = "81%";
+			 document.getElementById("buttonshowinfo").innerHTML = "<< Hide Info";	
+	  }  else {
+	       z.style.display ="none";
+		   y.style.width = "98%"; 
+		    ltabel.style.display = "none";
+			rtabel.style.display = "none";
+			historytabel.style.width = "98%";
+           document.getElementById("buttonshowinfo").innerHTML = "Show Info >>";		   
+	  }
+  }  else {
+     if  (z.style.display === "none") {
+	     z.style.display  = "block";
+		 y.style.width = "56%";
+		   ltabel.style.display = "block";
+			rtabel.style.display = "block";
+			historytabel.style.width = "56%";
+		 document.getElementById("buttonshowinfo").innerHTML = "<< Hide Info";	
+	 } else {
+	      z.style.display  = "none";
+		  y.style.width = "71%";
+		   ltabel.style.display = "none";
+			rtabel.style.display = "block";
+			historytabel.style.width = "71%";
+		 document.getElementById("buttonshowinfo").innerHTML = "Show Info >>";	
+	 }
+    }
+}
+
+</script>
+<!-- End Hide Info -->
+
+<!-- Hide Swap -->
+<script>
+function HideSwap() {
+  var  x = document.getElementById("swapDex");
+   var z = document.getElementById("Info"); 
+   var y = document.getElementById("Chart");
+    var ltabel =	document.getElementById("LeftTabel");
+	var rtabel =    document.getElementById("righttabel");
+	var historytabel = document.getElementById("TabelHistory")
+    
+   if (z.style.display === "none") {
+      if   (x.style.display === "none") {
+	        x.style.display = "block";
+			y.style.width = "71%";
+			 ltabel.style.display = "none";
+			rtabel.style.display = "block";
+			historytabel.style.width = "71%";
+			 document.getElementById("buttonshowswap").innerHTML = "Hide Swap >>";	
+	  }  else {
+	       x.style.display ="none";
+		   y.style.width = "98%"; 
+		    ltabel.style.display = "none";
+			rtabel.style.display = "none";
+			historytabel.style.width = "98%";
+           document.getElementById("buttonshowswap").innerHTML = "<< Show Swap";		   
+	  }
+  }  else {
+     if  (x.style.display === "none") {
+	     x.style.display  = "block";
+		 y.style.width = "56%";
+		 ltabel.style.display = "block";
+			rtabel.style.display = "block";
+			historytabel.style.width = "56%";
+		 document.getElementById("buttonshowswap").innerHTML = "Hide Swap >>";	
+	 } else {
+	      x.style.display  = "none";
+		 y.style.width = "81%";
+		 ltabel.style.display = "block";
+			rtabel.style.display = "none";
+			historytabel.style.width = "81%";
+		 document.getElementById("buttonshowswap").innerHTML = "<< Show Swap";	
+	 }
+      
+  }
+  
+ 
+}
+</script>
+<!-- End Hide Swap -->
+
+
+<!-- Wide Chart -->
+<script>
+function WideChart() {
+  var  x = document.getElementById("swapDex");
+   var z = document.getElementById("Info"); 
+   var y = document.getElementById("Chart");
+    var ltabel = document.getElementById("LeftTabel");
+	var rtabel =  document.getElementById("righttabel");
+	var historytabel = document.getElementById("TabelHistory")
+    
+   if (y.style.width === "98%") {
+       y.style.width = "56%";
+	  z.style.display  = "block";
+	   x.style.display  = "block";
+	  ltabel.style.display = "block";
+	   rtabel.style.display = "block";
+	  historytabel.style.width = "56%";
+	  document.getElementById("buttonshowinfo").innerHTML = "<< Hide Info";
+	   document.getElementById("buttonshowswap").innerHTML = "Hide Swap >>";	
+  }  else {
+    y.style.width = "98%";
+	  z.style.display  = "none";
+	   x.style.display  = "none";
+	  ltabel.style.display = "none";
+	   rtabel.style.display = "none";
+	  historytabel.style.width = "98%";
+	  document.getElementById("buttonshowinfo").innerHTML = "Show Info >>";
+	   document.getElementById("buttonshowswap").innerHTML = "<< Show Swap";
+    
+  }
+   
+}
+</script>
+<!-- End WideChart -->
+
+<script>
+function MediaScreen(mediaQuery) {
+  if (mediaQuery.matches) { 
+       document.getElementById("TabelHistory").style.width="98%";
+   document.getElementById("TabelHistory").style.marginLeft="5px";
+    document.getElementById("Chart").style.width="98%";
+   document.getElementById("Chart").style.marginLeft="5px";
+     document.getElementById("swapDex").style.display= "none";
+   document.getElementById("Info").style.display= "none";
+    document.getElementById("LeftTabel").style.display= "none";
+     document.getElementById("righttabel").style.display= "none";
+	
+	   
+  } else {
+	  document.getElementById("TabelHistory").style.width="56%";
+   document.getElementById("TabelHistory").style.marginLeft="20px";
+    document.getElementById("Chart").style.width="56%";
+   document.getElementById("Chart").style.marginLeft="22px";
+     document.getElementById("swapDex").style.display= "block";
+   document.getElementById("Info").style.display= "block";
+    document.getElementById("LeftTabel").style.display= "block";
+     document.getElementById("righttabel").style.display= "block";
+	  
+  }
+}
+
+var mediaQuery = window.matchMedia("(max-width: 1024px)")
+MediaScreen(mediaQuery) // Call listener function at run time
+mediaQuery.addListener(MediaScreen) // Attach listener function on state changes
+</script>
+
+<script>
+function tutupnotification() {
+     
+   var h = document.getElementById("notification");
+  if (h.style.display === "none") {
+     h.style.display = "block";
+  } else {
+    h.style.display = "none";   
+  }
+}
+</script>
+
+
+<script>
+function ShowNews() {
+ 
+ if  (document.getElementById("TableNews").style.display === "none") {
+	     document.getElementById("TableNews").style.display  = "block";
+		 document.getElementById("HistoryAllTransaction").style.display = "none";
+		  document.getElementById("TableHolders").style.display  = "none";
+		  document.getElementById("DetailInfo").style.display  = "none";
+		document.getElementById("buttonNews").style.color = "black";
+		document.getElementById("buttonNews").style.backgroundColor = "#25b0c7";
+		 document.getElementById("buttonDetail").style.color = "gray";
+		document.getElementById("buttonDetail").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonHolders").style.color = "gray";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonhistory").style.color = "gray";
+		document.getElementById("buttonhistory").style.backgroundColor = "#cae7e4";
+    } else {
+	    document.getElementById("TableNews").style.display  = "block";
+		 document.getElementById("HistoryAllTransaction").style.display = "none";
+		 document.getElementById("TableHolders").style.display  = "none";
+		 document.getElementById("DetailInfo").style.display  = "none";
+		document.getElementById("buttonNews").style.color = "black";
+		document.getElementById("buttonNews").style.backgroundColor = "#25b0c7";
+		 document.getElementById("buttonDetail").style.color = "gray";
+		document.getElementById("buttonDetail").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonHolders").style.color = "gray";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonhistory").style.color = "gray";
+		document.getElementById("buttonhistory").style.backgroundColor = "#cae7e4";
+		
+	}
+}	
+</script>
+
+<script>
+function ShowDetailInfo() {
+
+ if  ( document.getElementById("DetailInfo").style.display === "none") {
+	     document.getElementById("DetailInfo").style.display  = "block";
+		 document.getElementById("HistoryAllTransaction").style.display = "none";
+		  document.getElementById("TableHolders").style.display  = "none";
+		  document.getElementById("TableNews").style.display  = "none";
+		  document.getElementById("buttonDetail").style.color = "black";
+		document.getElementById("buttonDetail").style.backgroundColor = "#25b0c7";
+		document.getElementById("buttonNews").style.color = "gray";
+		document.getElementById("buttonNews").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonHolders").style.color = "gray";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonhistory").style.color = "gray";
+		document.getElementById("buttonhistory").style.backgroundColor = "#cae7e4";
+    } else {
+	  document.getElementById("DetailInfo").style.display  = "block";
+		document.getElementById("HistoryAllTransaction").style.display = "none";
+		  document.getElementById("TableHolders").style.display  = "none";
+		 document.getElementById("TableNews").style.display  = "none";
+		  document.getElementById("buttonDetail").style.color = "black";
+		document.getElementById("buttonDetail").style.backgroundColor = "#25b0c7";
+		document.getElementById("buttonNews").style.color = "gray";
+		document.getElementById("buttonNews").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonHolders").style.color = "gray";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#cae7e4";
+		document.getElementById("buttonhistory").style.color = "gray";
+		document.getElementById("buttonhistory").style.backgroundColor = "#cae7e4";
+	}
+}	
+</script>
+
+
+<script>
+function Showhistorytx() {
+
+
+if  (document.getElementById("HistoryAllTransaction").style.display === "none") {
+	     document.getElementById("HistoryAllTransaction").style.display  = "block";
+		  document.getElementById("TableHolders").style.display  = "none";
+		  document.getElementById("TableNews").style.display  = "none";
+		  document.getElementById("DetailInfo").style.display  = "none";
+		  document.getElementById("buttonhistory").style.color = "black";
+		  document.getElementById("buttonhistory").style.backgroundColor = "#25b0c7";
+		  document.getElementById("buttonHolders").style.color = "gray";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#cae7e4";
+		     document.getElementById("buttonNews").style.color = "gray";
+		document.getElementById("buttonNews").style.backgroundColor = "#cae7e4";
+		 document.getElementById("buttonDetail").style.color = "gray";
+		document.getElementById("buttonDetail").style.backgroundColor = "#cae7e4";
+    } else {
+	    document.getElementById("HistoryAllTransaction").style.display  = "block";
+		 document.getElementById("TableHolders").style.display  = "none";
+		  document.getElementById("TableNews").style.display  = "none";
+		   document.getElementById("DetailInfo").style.display  = "none";
+		  document.getElementById("buttonhistory").style.color = "black";
+		  document.getElementById("buttonhistory").style.backgroundColor = "#25b0c7";
+		  document.getElementById("buttonHolders").style.color = "gray";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#cae7e4";
+		     document.getElementById("buttonNews").style.color = "gray";
+		document.getElementById("buttonNews").style.backgroundColor = "#cae7e4";
+		 document.getElementById("buttonDetail").style.color = "gray";
+		document.getElementById("buttonDetail").style.backgroundColor = "#cae7e4";
+	}
+}
+
+</script>
+
+<script>
+function ShowHolders(){
+
+
+if  (document.getElementById("TableHolders").style.display === "none") {
+          document.getElementById("TableHolders").style.display  = "block";
+	     document.getElementById("HistoryAllTransaction").style.display  = "none";
+		  document.getElementById("TableNews").style.display  = "none";
+		  document.getElementById("DetailInfo").style.display  = "none";
+		   document.getElementById("buttonHolders").style.color = "black";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#25b0c7";
+		     document.getElementById("buttonNews").style.color = "gray";
+		   document.getElementById("buttonNews").style.backgroundColor = "#cae7e4";
+		 document.getElementById("buttonhistory").style.color = "gray";
+		  document.getElementById("buttonhistory").style.backgroundColor = "#cae7e4";
+		   document.getElementById("buttonDetail").style.color = "gray";
+		document.getElementById("buttonDetail").style.backgroundColor = "#cae7e4";
+    } else {
+	      document.getElementById("TableHolders").style.display  = "block";
+	     document.getElementById("HistoryAllTransaction").style.display  = "none";
+		  document.getElementById("TableNews").style.display  = "none";
+		  document.getElementById("DetailInfo").style.display  = "none";
+		   document.getElementById("buttonHolders").style.color = "black";
+		  document.getElementById("buttonHolders").style.backgroundColor = "#25b0c7";
+		     document.getElementById("buttonNews").style.color = "gray";
+		   document.getElementById("buttonNews").style.backgroundColor = "#cae7e4";
+		 document.getElementById("buttonhistory").style.color = "gray";
+		  document.getElementById("buttonhistory").style.backgroundColor = "#cae7e4";
+		   document.getElementById("buttonDetail").style.color = "gray";
+		document.getElementById("buttonDetail").style.backgroundColor = "#cae7e4";
+	}
+}
+</script>
+
+
+ <script type="text/javascript">
+    var account;
+
+    // https://docs.walletconnect.com/quick-start/dapps/web3-provider
+    var provider = new WalletConnectProvider.default({
+      rpc: {
+        1: "https://cloudflare-eth.com/", // https://ethereumnodes.com/
+        137: "https://polygon-rpc.com/", // https://docs.polygon.technology/docs/develop/network-details/network/
+        // ...
+
+      },
+      // bridge: 'https://bridge.walletconnect.org',
+    });
+
+    var connectWC = async () => {
+      await provider.enable();
+
+      //  Create Web3 instance
+      const web3 = new Web3(provider);
+      window.w3 = web3
+
+      var accounts  = await web3.eth.getAccounts(); // get all connected accounts
+      account = accounts[0]; // get the primary account
+    }
+
+
+    var sign = async (msg) => {
+      if (w3) {
+        return await w3.eth.personal.sign(msg, account)
+      } else {
+        return false
+      }
+    }
+
+    var contract = async (abi, address) => {
+      if (w3) {
+        return new w3.eth.Contract(abi, address)
+      } else {
+        return false
+      }
+    }
+
+    var disconnect = async () => {
+      // Close provider session
+      await provider.disconnect()
+    }
+
+
+    var address = "0x4b4f8ca8fb3e66b5ddafcebfe86312cec486dae1"
+    var abi = [{"inputs":[],"name":"count","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"view","type":"function"},{"inputs":[],"name":"increment","outputs":[{"internalType":"uint256","name":"","type":"uint256"}],"stateMutability":"nonpayable","type":"function"}]
+
+
+  </script>
+
+<!-- show Modal -->
+<script>
+// Get the modal
+var modal = document.getElementById("modalid");
+
+// Get the button that opens the modal
+var btn = document.getElementById("ButtonModal");
+
+// Get the <span> element that closes the modal
+var closetombol = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+closetombol.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<!--  show Modal -->
+
+<script>
+function modeFunction() {
+
+  var textmode = document.getElementById("mode");
+  
+ iconnotification
+   if (textmode.innerHTML === "Light")  { 
+   document.querySelector("body").style.backgroundColor = "#222222";
+    textmode.innerHTML = "Dark";
+	textmode.style.color = "white" ;
+    document.getElementById("tradingview_dark").style.display = "block";
+	document.getElementById("tradingview_light").style.display = "none";
+    document.getElementById("Info").style.backgroundColor = "#353738";  
+	 document.getElementById("Info").style.color = "white";  
+	 document.getElementById("switchmode").style.color = "white";
+	  	document.getElementById("globeicon").style.color = "white";
+		document.getElementById("iconnotification").style.color = "white";
+     document.getElementById("TopHighlight").style.color = "white";
+	  document.getElementById("selectchain").style.backgroundColor = "rgb(37 43 48)";  
+		  document.getElementById("selectchain").style.color = "white"; 
+		   document.getElementById("Inputsearchcoin").style.backgroundColor = "rgb(37 43 48)";  
+		  document.getElementById("Inputsearchcoin").style.color = "white";      
+	   document.getElementById("coinname").style.color = "white";  
+	   document.getElementById("shareicon").style.color = "#cfd5d7";  
+	      document.getElementById("iconwidechart").style.color = "#cfd5d7"; 
+		   document.getElementById("topchart").style.backgroundColor = "#353738";     
+		    document.getElementById("showdelete_watchlist").style.color = "white";  
+    		 document.getElementById("forumlive").style.color = "white";
+	   document.getElementById("paperdocs").style.backgroundColor = "rgb(53, 55, 56)"; 
+	   document.getElementById("paperdocs").style.color = "white"; 
+	    document.getElementById("votetoken").style.backgroundColor = "rgb(53, 55, 56)"; 
+	   document.getElementById("votetoken").style.color = "white"; 
+	    document.getElementById("HistoryAllTransaction").setAttribute("src", "https://coinbrain.com/embed/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c?theme=dark&chart=0&trades=1");
+		
+		  <!-- News Table --> 
+      document.getElementById("TableNews").style.backgroundColor = "rgb(53, 55, 56)"; 
+	  document.getElementById("TableNews").style.color = "white"; 
+	  document.getElementById("TableNews").style.border = "2px solid rgb(34, 34, 34)";	
+	  
+	   <!-- Holder Table -->  
+	   document.getElementById("TableHolders").style.backgroundColor = "rgb(53, 55, 56)"; 
+	  document.getElementById("TableHolders").style.color = "white"; 
+	  document.getElementById("TableHolders").style.border = "2px solid rgb(34, 34, 34)";	
+	  
+	  document.getElementById("DetailInfo").style.backgroundColor = "rgb(53, 55, 56)"; 
+	  document.getElementById("DetailInfo").style.color = "white"; 
+	   document.getElementById("DetailInfo").style.border = "2px solid rgb(34, 34, 34)";	
+	
+		
+	  document.getElementById("TabelHistory").style.backgroundColor = "rgb(53, 55, 56)"; 
+	  
+	  
+		 document.getElementById("Time").style.color = "white";   
+		document.getElementById("footer").style.color = "white";
+		document.getElementById("liveicongif").src = "/Image/Live-white-dark.gif";
+		
+		
+   }  
+   else
+   {          
+        textmode.innerHTML = "Light";
+    	textmode.style.color = "orange" ;
+       document.querySelector("body").style.backgroundColor = "#E5F4F9";
+	   document.getElementById("tradingview_dark").style.display = "none";
+       document.getElementById("tradingview_light").style.display = "block";
+        document.getElementById("Info").style.backgroundColor = "white"; 
+       document.getElementById("Info").style.color = "black";  		
+	   document.getElementById("switchmode").style.color = "black";
+	      document.getElementById("globeicon").style.color = "black";
+		  document.getElementById("iconnotification").style.color = "black";
+       document.getElementById("TopHighlight").style.color = "black";
+	   	document.getElementById("selectchain").style.backgroundColor = "white";  
+		  document.getElementById("selectchain").style.color = "green"; 
+		  document.getElementById("Inputsearchcoin").style.backgroundColor = "white";  
+		  document.getElementById("Inputsearchcoin").style.color = "black"; 
+	   document.getElementById("coinname").style.color = "black";
+	   document.getElementById("shareicon").style.color = "#685f5f";  
+	      document.getElementById("iconwidechart").style.color = "#685F5E";  
+		   document.getElementById("topchart").style.backgroundColor = "white"; 
+       document.getElementById("showdelete_watchlist").style.color = "black";   
+        document.getElementById("forumlive").style.color = "black";	   
+	   document.getElementById("paperdocs").style.backgroundColor = "white"; 
+	   document.getElementById("paperdocs").style.color = "black"; 
+	   document.getElementById("votetoken").style.backgroundColor = "white"; 
+	   document.getElementById("votetoken").style.color = "black"; 
+	    document.getElementById("HistoryAllTransaction").setAttribute("src", "https://coinbrain.com/embed/0x7130d2a12b9bcbfae4f2634d864a1ee1ce3ead9c?theme=light&chart=0&trades=1");
+		
+		  <!-- News Table -->
+		 document.getElementById("TableNews").style.backgroundColor = "white";
+	   document.getElementById("TableNews").style.color = "black"; 
+	   document.getElementById("TableNews").style.border = "2px solid rgb(229, 244, 249)";
+		
+		  <!-- Holder Table --> 
+		document.getElementById("TableHolders").style.backgroundColor = "white";
+	   document.getElementById("TableHolders").style.color = "black"; 
+	   document.getElementById("TableHolders").style.border = "2px solid rgb(229, 244, 249)";
+	   
+	   document.getElementById("DetailInfo").style.backgroundColor = "white";
+	   document.getElementById("DetailInfo").style.color = "black"; 
+	    document.getElementById("DetailInfo").style.border = "2px solid rgb(229, 244, 249)";
+		
+	   document.getElementById("TabelHistory").style.backgroundColor = "white"; 
+	  	   
+	    document.getElementById("Time").style.color = "black"; 
+		document.getElementById("footer").style.color = "black";
+		document.getElementById("liveicongif").src = "/Image/Live-white-light.gif";
+   }
+}
+
+
+</script>
+
+
+ <script>
+   function formatAMPM(date) {
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? 'pm' : 'am';
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? '0'+minutes : minutes;
+  var strTime = hours + ':' + minutes + ' ' + ampm;
+  return strTime;
+}
+
+  console.log(formatAMPM(new Date));
+  document.getElementById("Time").innerHTML =  " (TIME: " + formatAMPM(new Date) + ")";
+</script>
+
+
+<!--  Text Typewrite -->
+<script>
+var TxtType = function(el, toRotate, period) {
+        this.toRotate = toRotate;
+        this.el = el;
+        this.loopNum = 0;
+        this.period = parseInt(period, 1) || 100;
+        this.txt = '';
+        this.tick();
+        this.isDeleting = false;
+    };
+
+    TxtType.prototype.tick = function() {
+        var i = this.loopNum % this.toRotate.length;
+        var fullTxt = this.toRotate[i];
+
+        if (this.isDeleting) {
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+        } else {
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+        }
+
+        this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+        var that = this;
+        var delta = 200 - Math.random() * 100;
+
+        if (this.isDeleting) { delta /= 2; }
+
+        if (!this.isDeleting && this.txt === fullTxt) {
+        delta = this.period;
+        this.isDeleting = true;
+        } else if (this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        this.loopNum++;
+        delta = 500;
+        }
+
+        setTimeout(function() {
+        that.tick();
+        }, delta);
+    };
+
+    window.onload = function() {
+        var elements = document.getElementsByClassName('typewrite');
+        for (var i=0; i<elements.length; i++) {
+            var toRotate = elements[i].getAttribute('data-type');
+            var period = elements[i].getAttribute('data-period');
+            if (toRotate) {
+              new TxtType(elements[i], JSON.parse(toRotate), period);
+            }
+        }
+        // INJECT CSS
+        var css = document.createElement("style");
+        css.type = "text/css";
+        css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+        document.body.appendChild(css);
+    };
+	
+</script>
+
+
+ 
+ <!--  ToolTip Share Social Media -->
+<script>
+(function() {
+  $(function() {
+    $('.toggle').click(function() {
+      return $('.tip').toggle();
+    });
+    return $(document).mouseup(function(e) {
+      var container, popup;
+      container = $(".share");
+      popup = $('.tip');
+      if (container.is(e.target) || container.has(e.target).length) {
+        return;
+      }
+      return popup.hide();
+    });
+  });
+}).call(this);
+</script>
+
+
+<script>
+// Get the modal
+var modalBS = document.getElementById("ModalRememberBS");
+
+// Get the button that opens the modal
+var btn = document.getElementById("ButtonBuySellModal");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[1];
+var saveexit = document.getElementsByClassName("close")[2];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modalBS.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modalBS.style.display = "none";
+}
+
+saveexit.onclick = function() {
+  modalBS.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modalBS) {
+    modalBS.style.display = "none";
+  }
+}
+
+var BuyInputValue = document.getElementById("buyposition");
+var SellInputValue = document.getElementById("sellposition");
+
+var form_el = document.getElementById("FormRememberwatchlist");
+
+form_el.addEventListener("submit", function(evt) {
+    evt.preventDefault();
+    fillArray();
+});
+
+function fillArray() {
+    
+     document.getElementById("BP").innerHTML =  BuyInputValue.value;
+     document.getElementById("SP").innerHTML =  SellInputValue.value;
+}
+</script>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function FunctionLang() {
+  document.getElementById("DropdownLang").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('#globeicon')) {
+    var dropdowns = document.getElementsByClassName("dropdownLang-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+
+  </body>
+</html>
